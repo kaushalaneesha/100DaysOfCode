@@ -7,7 +7,7 @@ import re
 import sys
 
 
-# Complete the caesarCipher function below.
+# Complete the caesar cipher function below.
 def caesarCipher(s, k):
     new_str = [''] * len(s)
     for i, ch in enumerate(s):
