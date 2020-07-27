@@ -35,8 +35,6 @@ def lower_alpha(pos):
 
 
 if __name__ == '__main__':
-    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
     n = int(input())
 
     s = input()
@@ -46,5 +44,3 @@ if __name__ == '__main__':
     result = caesarCipher(s, k)
 
     print(result + '\n')
-
-    # fptr.close()
