@@ -9,7 +9,7 @@ import sys
 
 # Complete the caesarCipher function below.
 def caesarCipher(s, k):
-    new_str = ['']*len(s)
+    new_str = [''] * len(s)
     for i, ch in enumerate(s):
         ord_s = ord(ch)
         if is_alphabet(ord_s):
@@ -21,8 +21,10 @@ def caesarCipher(s, k):
             new_str[i] = ch
     return ''.join(new_str)
 
+
 def is_alphabet(pos):
     return upper_alpha(pos) or lower_alpha(pos)
+
 
 def upper_alpha(pos):
     return 65 <= pos <= 90
@@ -45,4 +47,4 @@ if __name__ == '__main__':
 
     print(result + '\n')
 
-    #fptr.close()
+    # fptr.close()
